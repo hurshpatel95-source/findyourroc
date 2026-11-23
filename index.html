@@ -114,20 +114,15 @@ body.ended .ever{display:block}
     <div class="sub"><span>Order ahead · pick up in Absecon</span><a data-cta="directions" href="https://www.google.com/maps/dir/?api=1&amp;destination=401+White+Horse+Pike+Absecon+NJ+08201">DIRECTIONS</a></div>
   </section>
 
-  <section class="week" aria-label="Brand deals on Green Wednesday">
-    <h2>PLUS THESE BRAND DEALS</h2>
+  <section class="week" aria-label="Also on Green Wednesday">
+    <h2>PLUS EXCLUSIVE BOGOs &amp; MORE</h2>
     <p class="lead">Wednesday, November 25 only, on top of 40% off storewide.</p>
     <ul>
-      <li><img src="img/tree-mark.svg" alt=""><div>Ogeez<small>Buy any Ogeez edible, get an Aquaberry or Raspberry Orange.</small></div></li>
-      <li><img src="img/tree-mark.svg" alt=""><div>Garden Society<small>BOGO all Garden Society edibles.</small></div></li>
-      <li><img src="img/tree-mark.svg" alt=""><div>Heavy Hitters<em>LIMITED QUANTITY</em><small>Buy a Heavy Hitters rosin vape, get Strawberry Cough for a penny.</small></div></li>
-      <li><img src="img/tree-mark.svg" alt=""><div>Clade 9 · Melt · Locals · Craft Kings<small>Buy any Clade 9, Melt, Locals or Craft Kings product, get a Craft Kings 1g pre-roll.</small></div></li>
-      <li><img src="img/tree-mark.svg" alt=""><div>Good Green<small>Buy 2 Good Green eighths, get a Dogwalkers 1g pre-roll.</small></div></li>
-      <li><img src="img/tree-mark.svg" alt=""><div>Rythm<small>Buy 2 Rythm eighths, get a Dogwalkers 5-pack of pre-rolls.</small></div></li>
-      <li><img src="img/tree-mark.svg" alt=""><div>&amp;Shine<small>Buy an &amp;Shine vape, get an &amp;Shine 1g pre-roll.</small></div></li>
-      <li><img src="img/tree-mark.svg" alt=""><div>Ozone<small>Buy any Ozone eighth or vape, get an Ozone 1g pre-roll.</small></div></li>
+      <li><img src="img/tree-mark.svg" alt=""><div>Exclusive BOGOs<small>A long list of buy-one-get-one deals, one day only. See them all on the menu.</small></div></li>
+      <li><img src="img/tree-mark.svg" alt=""><div>Brand deals<small>Buy from a featured brand, get a little something extra. Ask at the counter.</small></div></li>
+      <li><img src="img/tree-mark.svg" alt=""><div>Order ahead<small>Skip the line: order on the menu and pick up in Absecon.</small></div></li>
     </ul>
-    <p class="rules">BOGO is off the original retail price. Deals don’t stack. While supplies last. Exclusions may apply; ask your budtender.</p>
+    <p class="rules">BOGO is off the original retail price. Deals don’t stack. While supplies last. Exclusions may apply.</p>
   </section>
 
   <section class="visit" aria-label="Visit">
@@ -163,7 +158,7 @@ body.ended .ever{display:block}
   // The pill under the offer counts down to the day.
   var w = document.getElementById('when'), days = Math.ceil((DAY - now) / 864e5);
   if (w) w.textContent = now >= DAY ? 'TODAY ONLY · UNTIL 10 PM' : days === 1 ? 'TOMORROW · ONE DAY ONLY' : 'IN ' + days + ' DAYS · ONE DAY ONLY';
-  // Menu links: carry which ad sent the visitor (utm_content) through to the Sweed menu.
+  // Menu links: carry which ad sent the visitor (utm_content) through to the menu.
   var ad = q.get('utm_content') || 'direct';
   var campaign = document.body.classList.contains('ended') ? 'evergreen' : 'green-wednesday-2026';
   document.querySelectorAll('a[href^="https://shop.redoakdispensary.com"]').forEach(function(a){
